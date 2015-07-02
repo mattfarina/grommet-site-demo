@@ -10,7 +10,7 @@ default_email=matt.farina+deploy.sh@gmail.com
 
 #repository to deploy to. must be readable and writable.
 #using https url instead of ssh to avoid issues with host authenticity checks
-repo=https://$GITHUB_TOKEN@github.com/X1011/verge-mobile-bingo.git
+repo=https://$GITHUB_TOKEN@github.com/mattfarina/grommet-site-demo.git
 
 if [[ $1 = "-v" || $1 = "--verbose" ]]; then
 	verbose=true

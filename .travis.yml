@@ -1,4 +1,8 @@
 language: node_js
 
-#after_success:
-#    - if [[ $TRAVIS_BRANCH = "master" ]]; then ./deploy.sh --verbose; fi
+after_success:
+    - if [[ $TRAVIS_BRANCH = "master" ]]; then ./deploy.sh --verbose; fi
+
+env:
+  global:
+    secure: N9cGgMj8Mssrl2UsopD4q8g/XtqQX5KYrgGKKGGnbXW8xakpZyGQD00hK7wmmzvnGIl1j/WMRcZG2PtZt58Sly57Hj7APt+5sR/8T8AsO51x6aTENa9nCyVnMadto4XT0aX8JxX0UVjY2I8BsniZYezA0sS9CpqHp64sDYSW7Xeq78hmFhOiBBN62a8M1FG/P2yyQ4cz0JX/oTPwviekd+yrcks3CArrz8yFUZlhd+CzBXAJ/gy80px8bhNL4cng1xEz9pLsRZlb2ndnk2G8GzL2mfrECO2Mf2fx+cx1AjDkkEljUjVOZYLvFaXavbHqde4wBCGalVJXUVF57EOPRg5d3Xciz5FlZL8A7ofRLTZCsyvybn+z/4UrVv22NBQzyTMPlLI/hRi6BiWmhUhFJjclHVoNaCQR0cAxisMfcpPhJ0hpqI0umJQrObFiWuVYIC+/c7TK47P24exhAybWzE9nLdsyfgFys2ODkQXWtOxuhXvZcdkl/TkjM1ztVaeYNxEAC0c/XwZyYoDBtQty5phWxrg9DtLBhw7himpAVqPmToNLSnOKVhlVPAFDg4iTQNuduSm8D4zJ+ScYHGG2y67nnmwnGI9qyPWU2KIDgcDp+JewYZVzR3/NeQ75QaCN+SixEEF9TPj0VLOMkxrqvLfBKlzmK3Zi8gFYNtTqovA=
