@@ -8,7 +8,8 @@
     "prod": "webpack -p --progress --colors",
     "dev": "webpack-dev-server --progress --colors",
     "start": "npm run dev",
-    "setup": "npm install && bower install"
+    "setup": "npm install && bower install",
+    "test": "bower install && npm run prod"
   },
   "author": "Matt Farina",
   "devDependencies": {
