@@ -1,0 +1,4 @@
+language: node_js
+
+#after_success:
+#    - if [[ $TRAVIS_BRANCH = "master" ]]; then ./deploy.sh --verbose; fi
