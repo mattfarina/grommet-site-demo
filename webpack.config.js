@@ -1,6 +1,7 @@
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var data = require('./data')
 var path = require('path');
+var isDevServer = process.argv.join('').indexOf('webpack-dev-server') > -1;
 
 module.exports = {
   entry: './index.js',
@@ -9,7 +10,7 @@ module.exports = {
     filename: 'index.js',
     path: 'dist',
     libraryTarget: 'umd',
-    publicPath: '/'
+    publicPath: isDevServer ? '/': '/grommet-site-demo/'
   },
 
   module: {
